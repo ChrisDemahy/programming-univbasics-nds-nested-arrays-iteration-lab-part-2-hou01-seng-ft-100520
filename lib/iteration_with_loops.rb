@@ -16,10 +16,12 @@ def find_min_in_nested_arrays(src)
         # If found store it in lowest_int
         lowest_int = src[row_index][column_index]
       end
-    column_index += 1
+      # move to the next column
+      column_index += 1
     end
-  results << lowest_int
-  row_index += 1
+    # Save that rows lowest integer and move to the next row
+    results << lowest_int
+    row_index += 1
   end
-results
+  results
 end
